@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dr. LG Mokubedi Inc. | General Practitioner – Letlhabile &amp; Brits</title>
+<meta name="description" content="Dr. LG Mokubedi Inc. – GP consultations, chronic care, mother &amp; baby clinic, women's health, sonar, ECG, wound care and more. Open 7 days in Letlhabile Mall, plus a branch at Brits Kerkmart.">
+<meta name="theme-color" content="#0b5d63">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b5d63'/%3E%3Cpath d='M26 14h12v12h12v12H38v12H26V38H14V26h12z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalClinic",
+  "name": "Dr. LG Mokubedi Inc.",
+  "founder": { "@type": "Physician", "name": "Dr. Lehlogonolo George Mokubedi" },
+  "email": "drlgmokubediinc@gmail.com",
+  "telephone": "+27122520114",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Shop No. 53, Letlhabile Medical Centre, Letlhabile Mall",
+    "addressLocality": "Letlhabile",
+    "addressRegion": "North West",
+    "addressCountry": "ZA"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:00", "closes": "19:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "07:00", "closes": "14:00" }
+  ],
+  "medicalSpecialty": "PrimaryCare"
+}
+</script>
+
+<style>
+  :root {
+    --teal-900: #063b3f;
+    --teal-700: #0b5d63;
+    --teal-600: #0f7178;
+    --teal-100: #e3f2f1;
+    --teal-50:  #f2f9f8;
+    --coral:    #e2725b;
+    --coral-dk: #c95a44;
+    --ink:      #17252a;
+    --muted:    #5b6b70;
+    --line:     #dbe6e5;
+    --white:    #ffffff;
+    --radius:   18px;
+    --shadow:   0 10px 30px rgba(6, 59, 63, .08);
+    --max:      1160px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+  body { font-family: "Inter", system-ui, sans-serif; color: var(--ink); background: var(--white); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  img, svg { display: block; }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+  h1, h2, h3 { font-family: "Fraunces", Georgia, serif; line-height: 1.15; color: var(--teal-900); }
+  h2 { font-size: clamp(1.8rem, 3.5vw, 2.5rem); }
+  .eyebrow { display: inline-block; font-size: .78rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--teal-600); margin-bottom: 12px; }
+  .lead { color: var(--muted); font-size: 1.08rem; max-width: 620px; }
+  section { padding: 88px 0; }
+
+  /* Buttons */
+  .btn { display: inline-flex; align-items: center; gap: 10px; padding: 14px 24px; border-radius: 999px; font-weight: 600; font-size: .98rem; transition: transform .15s, background .15s, box-shadow .15s; border: 2px solid transparent; cursor: pointer; }
+  .btn svg { width: 18px; height: 18px; }
+  .btn-primary { background: var(--coral); color: var(--white); box-shadow: 0 8px 20px rgba(226, 114, 91, .3); }
+  .btn-primary:hover { background: var(--coral-dk); transform: translateY(-2px); }
+  .btn-ghost { border-color: rgba(255,255,255,.5); color: var(--white); }
+  .btn-ghost:hover { background: rgba(255,255,255,.12); }
+  .btn-outline { border-color: var(--teal-700); color: var(--teal-700); }
+  .btn-outline:hover { background: var(--teal-700); color: var(--white); }
+
+  /* Top bar + nav */
+  .topbar { background: var(--teal-900); color: #cfe5e3; font-size: .85rem; }
+  .topbar .wrap { display: flex; justify-content: space-between; gap: 16px; padding-top: 8px; padding-bottom: 8px; flex-wrap: wrap; }
+  .topbar a:hover { color: var(--white); }
+  .topbar span { display: inline-flex; align-items: center; gap: 6px; }
+  header.nav { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.94); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+  header.nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand-mark { width: 42px; height: 42px; border-radius: 12px; background: var(--teal-700); display: grid; place-items: center; flex-shrink: 0; }
+  .brand-mark svg { width: 22px; height: 22px; }
+  .brand-name { font-family: "Fraunces", serif; font-weight: 700; font-size: 1.15rem; color: var(--teal-900); line-height: 1.1; }
+  .brand-sub { font-size: .74rem; color: var(--muted); letter-spacing: .04em; }
+  nav ul { display: flex; gap: 30px; list-style: none; align-items: center; }
+  nav ul a { font-weight: 500; font-size: .95rem; color: var(--ink); }
+  nav ul a:hover { color: var(--teal-600); }
+  nav .btn { padding: 10px 20px; font-size: .9rem; }
+  .menu-btn { display: none; background: none; border: 0; cursor: pointer; padding: 8px; }
+  .menu-btn svg { width: 26px; height: 26px; stroke: var(--teal-900); }
+
+  /* Hero */
+  .hero { position: relative; background: linear-gradient(135deg, var(--teal-900) 0%, var(--teal-700) 60%, var(--teal-600) 100%); color: var(--white); padding: 96px 0 120px; overflow: hidden; }
+  .hero::before, .hero::after { content: ""; position: absolute; border-radius: 50%; background: rgba(255,255,255,.05); }
+  .hero::before { width: 520px; height: 520px; right: -140px; top: -160px; }
+  .hero::after  { width: 340px; height: 340px; right: 180px; bottom: -200px; }
+  .hero .wrap { position: relative; z-index: 1; display: grid; grid-template-columns: 1.25fr 1fr; gap: 56px; align-items: center; }
+  .hero h1 { color: var(--white); font-size: clamp(2.3rem, 5vw, 3.6rem); margin-bottom: 20px; }
+  .hero h1 em { font-style: normal; color: #ffc3b4; }
+  .hero p { color: #d3e8e6; font-size: 1.12rem; max-width: 540px; margin-bottom: 32px; }
+  .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+  .status { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,.12); padding: 7px 14px; border-radius: 999px; font-size: .85rem; font-weight: 500; margin-bottom: 22px; }
+  .dot { width: 9px; height: 9px; border-radius: 50%; background: #9aa; }
+  .dot.open { background: #4ade80; box-shadow: 0 0 0 4px rgba(74,222,128,.25); }
+  .dot.closed { background: #f87171; }
+
+  .hero-card { background: var(--white); color: var(--ink); border-radius: 22px; padding: 30px; box-shadow: 0 30px 60px rgba(0,0,0,.25); }
+  .hero-card h3 { font-size: 1.3rem; margin-bottom: 4px; }
+  .hero-card .small { color: var(--muted); font-size: .88rem; margin-bottom: 20px; }
+  .hours-list { list-style: none; border-top: 1px solid var(--line); }
+  .hours-list li { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--line); font-size: .95rem; }
+  .hours-list li.today { font-weight: 700; color: var(--teal-700); }
+  .hero-card .btn { width: 100%; justify-content: center; margin-top: 22px; }
+
+  /* Highlights strip */
+  .strip { margin-top: -56px; position: relative; z-index: 2; padding: 0; }
+  .strip .wrap > div { background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--line); }
+  .strip .item { padding: 26px 24px; display: flex; gap: 14px; align-items: flex-start; }
+  .strip .item + .item { border-left: 1px solid var(--line); }
+  .strip .ico { width: 44px; height: 44px; border-radius: 12px; background: var(--teal-100); display: grid; place-items: center; flex-shrink: 0; }
+  .strip .ico svg { width: 22px; height: 22px; stroke: var(--teal-700); }
+  .strip strong { display: block; font-size: .98rem; color: var(--teal-900); }
+  .strip small { color: var(--muted); font-size: .85rem; }
+
+  /* About */
+  .about .wrap { display: grid; grid-template-columns: 1fr 1.2fr; gap: 64px; align-items: center; }
+  .portrait { aspect-ratio: 4/5; border-radius: 24px; background: linear-gradient(160deg, var(--teal-100), var(--teal-50)); border: 1px solid var(--line); display: grid; place-items: center; position: relative; overflow: hidden; }
+  .portrait .initials { font-family: "Fraunces", serif; font-size: 6rem; color: var(--teal-700); opacity: .9; }
+  .portrait .tag { position: absolute; left: 20px; bottom: 20px; right: 20px; background: var(--white); border-radius: 14px; padding: 14px 18px; box-shadow: var(--shadow); }
+  .portrait .tag strong { display: block; color: var(--teal-900); }
+  .portrait .tag span { color: var(--muted); font-size: .88rem; }
+  .about p { color: var(--muted); margin-top: 18px; }
+  .about .checks { list-style: none; margin-top: 26px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .about .checks li { display: flex; gap: 10px; align-items: center; font-weight: 500; }
+  .about .checks svg { width: 20px; height: 20px; stroke: var(--teal-600); flex-shrink: 0; }
+
+  /* Services */
+  .services { background: var(--teal-50); }
+  .section-head { text-align: center; margin: 0 auto 52px; max-width: 680px; }
+  .section-head .lead { margin: 14px auto 0; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .card { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; transition: transform .2s, box-shadow .2s, border-color .2s; }
+  .card:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: #bcd8d6; }
+  .card .ico { width: 52px; height: 52px; border-radius: 14px; background: var(--teal-100); display: grid; place-items: center; margin-bottom: 18px; }
+  .card .ico svg { width: 26px; height: 26px; stroke: var(--teal-700); }
+  .card h3 { font-size: 1.2rem; margin-bottom: 8px; }
+  .card p { color: var(--muted); font-size: .95rem; }
+
+  /* Locations */
+  .locs { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  .loc { border: 1px solid var(--line); border-radius: 22px; overflow: hidden; background: var(--white); display: flex; flex-direction: column; }
+  .loc iframe { width: 100%; height: 240px; border: 0; background: var(--teal-50); }
+  .loc-body { padding: 28px; display: flex; flex-direction: column; gap: 18px; flex: 1; }
+  .loc-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; flex-wrap: wrap; }
+  .badge { font-size: .75rem; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; padding: 5px 12px; border-radius: 999px; background: var(--teal-100); color: var(--teal-700); }
+  .badge.alt { background: #fdeae5; color: var(--coral-dk); }
+  .loc h3 { font-size: 1.45rem; margin-top: 10px; }
+  .loc .addr { display: flex; gap: 10px; color: var(--muted); }
+  .loc .addr svg { width: 20px; height: 20px; stroke: var(--teal-600); flex-shrink: 0; margin-top: 3px; }
+  .live { display: inline-flex; align-items: center; gap: 8px; font-size: .88rem; font-weight: 600; color: var(--muted); }
+  .loc .hours-list li { font-size: .93rem; }
+  .loc .actions { margin-top: auto; display: flex; gap: 10px; flex-wrap: wrap; }
+  .loc .actions .btn { padding: 11px 20px; font-size: .9rem; }
+
+  /* Contact */
+  .contact { background: var(--teal-900); color: #d3e8e6; }
+  .contact h2 { color: var(--white); }
+  .contact .lead { color: #a9cbc8; }
+  .contact .wrap { display: grid; grid-template-columns: 1fr 1.1fr; gap: 56px; align-items: start; }
+  .phones { display: grid; gap: 14px; margin-top: 32px; }
+  .phone { display: flex; align-items: center; gap: 16px; padding: 18px 20px; border-radius: 16px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1); transition: background .15s; }
+  .phone:hover { background: rgba(255,255,255,.12); }
+  .phone .ico { width: 46px; height: 46px; border-radius: 12px; background: rgba(255,255,255,.1); display: grid; place-items: center; flex-shrink: 0; }
+  .phone .ico svg { width: 22px; height: 22px; stroke: #ffc3b4; }
+  .phone small { display: block; font-size: .8rem; color: #a9cbc8; }
+  .phone strong { font-size: 1.1rem; color: var(--white); font-weight: 600; }
+
+  form { background: var(--white); color: var(--ink); border-radius: 22px; padding: 34px; display: grid; gap: 16px; }
+  form h3 { font-size: 1.4rem; }
+  form .small { color: var(--muted); font-size: .9rem; margin-top: -8px; }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  label { font-size: .85rem; font-weight: 600; color: var(--teal-900); display: grid; gap: 6px; }
+  input, select, textarea { font: inherit; padding: 12px 14px; border: 1.5px solid var(--line); border-radius: 12px; background: var(--teal-50); color: var(--ink); width: 100%; }
+  input:focus, select:focus, textarea:focus { outline: none; border-color: var(--teal-600); background: var(--white); }
+  textarea { min-height: 110px; resize: vertical; }
+  form .btn { justify-content: center; }
+  .notice { font-size: .82rem; color: var(--muted); background: #fff6f3; border-left: 3px solid var(--coral); padding: 10px 14px; border-radius: 8px; }
+
+  /* Footer */
+  footer { background: #042a2d; color: #8fb3b0; padding: 40px 0; font-size: .88rem; }
+  footer .wrap { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; align-items: center; }
+  footer a:hover { color: var(--white); }
+  footer .links { display: flex; gap: 22px; flex-wrap: wrap; }
+
+  /* Floating call button (mobile) */
+  .fab { display: none; position: fixed; right: 18px; bottom: 18px; z-index: 60; width: 58px; height: 58px; border-radius: 50%; background: var(--coral); box-shadow: 0 10px 24px rgba(226,114,91,.45); place-items: center; }
+  .fab svg { width: 26px; height: 26px; stroke: var(--white); }
+
+  /* Reveal */
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto; } }
+
+  /* Responsive */
+  @media (max-width: 980px) {
+    .hero .wrap, .about .wrap, .contact .wrap { grid-template-columns: 1fr; }
+    .grid { grid-template-columns: 1fr 1fr; }
+    .strip .wrap > div { grid-template-columns: 1fr 1fr; }
+    .strip .item:nth-child(3) { border-left: 0; }
+    .strip .item:nth-child(n+3) { border-top: 1px solid var(--line); }
+    .locs { grid-template-columns: 1fr; }
+    .portrait { max-width: 420px; aspect-ratio: 4/3; }
+  }
+  @media (max-width: 760px) {
+    nav ul { display: none; position: absolute; top: 72px; left: 0; right: 0; background: var(--white); flex-direction: column; gap: 0; padding: 8px 20px 20px; border-bottom: 1px solid var(--line); box-shadow: var(--shadow); align-items: stretch; }
+    nav ul.open { display: flex; }
+    nav ul li a { display: block; padding: 14px 0; border-bottom: 1px solid var(--line); }
+    nav ul li:last-child a { border: 0; margin-top: 12px; justify-content: center; }
+    .menu-btn { display: block; }
+    .topbar .hide-sm { display: none; }
+    section { padding: 64px 0; }
+    .hero { padding: 64px 0 100px; }
+    .grid, .row, .about .checks { grid-template-columns: 1fr; }
+    .strip .wrap > div { grid-template-columns: 1fr; }
+    .strip .item + .item { border-left: 0; border-top: 1px solid var(--line); }
+    .fab { display: grid; }
+    form { padding: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- SVG icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="i-steth" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v5a5 5 0 0 0 10 0V3"/><path d="M10 13v2a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="10" r="2"/></symbol>
+    <symbol id="i-pill" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 20.5 3.5 13.5a5 5 0 0 1 7-7l7 7a5 5 0 0 1-7 7z"/><path d="m8.5 8.5 7 7"/></symbol>
+    <symbol id="i-baby" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M10 7.5h.01M14 7.5h.01M10.5 10a2 2 0 0 0 3 0"/><path d="M7 21v-2a5 5 0 0 1 10 0v2"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z"/></symbol>
+    <symbol id="i-scan" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"/><circle cx="12" cy="12" r="4"/></symbol>
+    <symbol id="i-pulse" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></symbol>
+    <symbol id="i-band" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="8" width="20" height="8" rx="4" transform="rotate(-45 12 12)"/><path d="M10 10h.01M14 14h.01M10 14h.01M14 10h.01"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7 6.3 8.4a8 8 0 1 0 11.4 0z"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+    <symbol id="i-cross" viewBox="0 0 24 24" fill="#fff"><path d="M9 2h6v7h7v6h-7v7H9v-7H2V9h7z"/></symbol>
+    <symbol id="i-nav" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 19-9-9 19-2-8z"/></symbol>
+  </defs>
+</svg>
+
+<div class="topbar">
+  <div class="wrap">
+    <span><svg width="14" height="14" stroke="currentColor"><use href="#i-clock"/></svg> Letlhabile open 7 days a week</span>
+    <span class="hide-sm">
+      <a href="tel:+27122520114">012 252 0114</a> &nbsp;·&nbsp;
+      <a href="mailto:drlgmokubediinc@gmail.com">drlgmokubediinc@gmail.com</a>
+    </span>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="brand" aria-label="Dr. LG Mokubedi Inc. home">
+      <span class="brand-mark"><svg><use href="#i-cross"/></svg></span>
+      <span>
+        <span class="brand-name">Dr. LG Mokubedi Inc.</span><br>
+        <span class="brand-sub">General Medical Practitioner</span>
+      </span>
+    </a>
+    <nav>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false" id="menuBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <ul id="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#locations">Locations &amp; Hours</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="tel:+27122520114" class="btn btn-primary"><svg stroke="currentColor"><use href="#i-phone"/></svg> Call now</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <div class="status"><span class="dot" id="heroDot"></span><span id="heroStatus">Checking opening hours…</span></div>
+        <h1>Caring for your family, <em>every day of the week.</em></h1>
+        <p>Dr. Lehlogonolo George Mokubedi and the team offer trusted general practice care for the whole family — from everyday consultations and chronic medication to antenatal care, sonar and wellness services.</p>
+        <div class="hero-ctas">
+          <a href="tel:+27122520114" class="btn btn-primary"><svg stroke="currentColor"><use href="#i-phone"/></svg> Call 012 252 0114</a>
+          <a href="#locations" class="btn btn-ghost"><svg stroke="currentColor"><use href="#i-pin"/></svg> Find us</a>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <h3>Letlhabile Practice</h3>
+        <p class="small">Shop 53, Letlhabile Medical Centre, Letlhabile Mall</p>
+        <ul class="hours-list" data-hours="letlhabile"></ul>
+        <a href="#contact" class="btn btn-outline"><svg stroke="currentColor"><use href="#i-cal"/></svg> Request an appointment</a>
+      </aside>
+    </div>
+  </section>
+
+  <!-- HIGHLIGHTS -->
+  <div class="strip">
+    <div class="wrap"><div>
+      <div class="item"><span class="ico"><svg><use href="#i-clock"/></svg></span><div><strong>Open 7 days</strong><small>Weekdays until 19:00</small></div></div>
+      <div class="item"><span class="ico"><svg><use href="#i-pin"/></svg></span><div><strong>Two locations</strong><small>Letlhabile &amp; Brits</small></div></div>
+      <div class="item"><span class="ico"><svg><use href="#i-baby"/></svg></span><div><strong>Whole-family care</strong><small>Babies to pensioners</small></div></div>
+      <div class="item"><span class="ico"><svg><use href="#i-scan"/></svg></span><div><strong>On-site diagnostics</strong><small>Sonar, ECG, spirometry</small></div></div>
+    </div></div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="wrap">
+      <div class="portrait reveal" aria-hidden="true">
+        <span class="initials">LG</span>
+        <div class="tag"><strong>Dr. Lehlogonolo George Mokubedi</strong><span>General Practitioner · Founder</span></div>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">About the practice</span>
+        <h2>Your local family doctor in Letlhabile and Brits</h2>
+        <p>Dr. LG Mokubedi Inc. was founded by Dr. Lehlogonolo George Mokubedi, a general medical practitioner committed to accessible, quality healthcare close to home.</p>
+        <p>Our main practice in the Letlhabile Medical Centre is open seven days a week with extended weekday hours, so you can see a doctor before or after work. Our Brits branch at Brits Kerkmart serves patients from Monday to Saturday.</p>
+        <ul class="checks">
+          <li><svg><use href="#i-check"/></svg> Consultations for all ages</li>
+          <li><svg><use href="#i-check"/></svg> Chronic care &amp; medication</li>
+          <li><svg><use href="#i-check"/></svg> Mother &amp; baby clinic</li>
+          <li><svg><use href="#i-check"/></svg> Sonar on-site</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Our services</span>
+        <h2>Comprehensive care under one roof</h2>
+        <p class="lead">From routine check-ups to diagnostics and minor procedures, we look after every stage of your family's health.</p>
+      </div>
+      <div class="grid">
+        <article class="card reveal"><div class="ico"><svg><use href="#i-steth"/></svg></div><h3>General GP Consultations</h3><p>Diagnosis and treatment of everyday illnesses, infections, injuries and general health concerns for adults and children.</p></article>
+        <article class="card reveal"><div class="ico"><svg><use href="#i-pill"/></svg></div><h3>Chronic Disease Management</h3><p>Ongoing care and medication for chronic conditions, with regular monitoring to keep you well.</p></article>
+        <article class="card reveal"><div class="ico"><svg><use href="#i-baby"/></svg></div><h3>Mother &amp; Baby Clinic</h3><p>Antenatal care for expecting mothers and dedicated clinic support for mom and baby.</p></article>
+        <article class="card reveal"><div class="ico"><svg><use href="#i-heart"/></svg></div><h3>Women's Health</h3><p>Pap smears, sonar and family planning services in a private, respectful setting.</p></article>
+        <article class="card reveal"><div class="ico"><svg><use href="#i-scan"/></svg></div><h3>Sonar &amp; Ultrasound</h3><p>On-site ultrasound imaging, including pregnancy scans, without a separate referral trip.</p></article>
+        <article class="card reveal"><div class="ico"><svg><use href="#i-pulse"/></svg></div><h3>ECG &amp; Spirometry</h3><p>Heart rhythm (ECG) and lung function (spirometry) testing to support accurate diagnosis.</p></article>
+        <article class="card reveal"><div class="ico"><svg><use href="#i-band"/></svg></div><h3>Wound Care</h3><p>Cleaning, dressing and follow-up care for cuts, burns and chronic wounds.</p></article>
+        <article class="card reveal"><div class="ico"><svg><use href="#i-user"/></svg></div><h3>Pensioner Care</h3><p>Attentive, patient-centred care for our senior patients and their ongoing health needs.</p></article>
+        <article class="card reveal"><div class="ico"><svg><use href="#i-drop"/></svg></div><h3>Wellness, IV Drips &amp; Circumcisions</h3><p>Wellness clinic check-ups, IV drip therapy and safe medical circumcisions.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATIONS -->
+  <section id="locations">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Locations &amp; hours</span>
+        <h2>Two practices, close to home</h2>
+        <p class="lead">Visit us at our main practice in Letlhabile Mall or our branch in Brits.</p>
+      </div>
+      <div class="locs">
+        <article class="loc reveal">
+          <iframe loading="lazy" title="Map of Letlhabile Mall" referrerpolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?q=Letlhabile%20Mall%2C%20Letlhabile%2C%20North%20West&z=16&output=embed"></iframe>
+          <div class="loc-body">
+            <div class="loc-top">
+              <div><span class="badge">Main practice</span><h3>Letlhabile</h3></div>
+              <span class="live"><span class="dot" data-dot="letlhabile"></span><span data-status="letlhabile"></span></span>
+            </div>
+            <p class="addr"><svg><use href="#i-pin"/></svg> Shop No. 53, Letlhabile Medical Centre, Letlhabile Mall (next to Standard Bank), Letlhabile, North West</p>
+            <ul class="hours-list" data-hours="letlhabile"></ul>
+            <div class="actions">
+              <a href="tel:+27122520114" class="btn btn-primary"><svg stroke="currentColor"><use href="#i-phone"/></svg> Call</a>
+              <a href="https://www.google.com/maps/search/?api=1&query=Letlhabile%20Mall%20Letlhabile%20North%20West" target="_blank" rel="noopener" class="btn btn-outline"><svg stroke="currentColor"><use href="#i-nav"/></svg> Directions</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="loc reveal">
+          <iframe loading="lazy" title="Map of Brits Kerkmart" referrerpolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?q=Kerkmart%2C%20Brits&z=16&output=embed"></iframe>
+          <div class="loc-body">
+            <div class="loc-top">
+              <div><span class="badge alt">Branch</span><h3>Brits</h3></div>
+              <span class="live"><span class="dot" data-dot="brits"></span><span data-status="brits"></span></span>
+            </div>
+            <p class="addr"><svg><use href="#i-pin"/></svg> Brits Kerkmart, Brits, North West</p>
+            <ul class="hours-list" data-hours="brits"></ul>
+            <div class="actions">
+              <a href="tel:+27122520114" class="btn btn-primary"><svg stroke="currentColor"><use href="#i-phone"/></svg> Call</a>
+              <a href="https://www.google.com/maps/search/?api=1&query=Kerkmart%20Brits" target="_blank" rel="noopener" class="btn btn-outline"><svg stroke="currentColor"><use href="#i-nav"/></svg> Directions</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow" style="color:#ffc3b4">Get in touch</span>
+        <h2>Book a visit or ask a question</h2>
+        <p class="lead">Call any of our numbers during practice hours, or send us a message and we'll get back to you.</p>
+        <div class="phones">
+          <a class="phone" href="tel:+27122520114"><span class="ico"><svg><use href="#i-phone"/></svg></span><span><small>Practice line</small><strong>012 252 0114</strong></span></a>
+          <a class="phone" href="tel:+27683918938"><span class="ico"><svg><use href="#i-phone"/></svg></span><span><small>Mobile</small><strong>068 391 8938</strong></span></a>
+          <a class="phone" href="tel:+27115120242"><span class="ico"><svg><use href="#i-phone"/></svg></span><span><small>Alternative line</small><strong>011 512 0242</strong></span></a>
+          <a class="phone" href="mailto:drlgmokubediinc@gmail.com"><span class="ico"><svg><use href="#i-mail"/></svg></span><span><small>Email</small><strong>drlgmokubediinc@gmail.com</strong></span></a>
+        </div>
+      </div>
+
+      <form id="apptForm" class="reveal" novalidate>
+        <h3>Appointment request</h3>
+        <p class="small">This opens your email app with the details filled in.</p>
+        <div class="row">
+          <label>Full name<input name="fullname" required autocomplete="name"></label>
+          <label>Phone number<input name="phone" type="tel" required autocomplete="tel"></label>
+        </div>
+        <div class="row">
+          <label>Practice
+            <select name="branch">
+              <option>Letlhabile (main practice)</option>
+              <option>Brits (Kerkmart)</option>
+            </select>
+          </label>
+          <label>Preferred date<input name="date" type="date"></label>
+        </div>
+        <label>Service
+          <select name="service">
+            <option>General consultation</option>
+            <option>Chronic medication / follow-up</option>
+            <option>Mother &amp; baby / antenatal</option>
+            <option>Women's health (Pap smear, family planning)</option>
+            <option>Sonar / ultrasound</option>
+            <option>ECG / spirometry</option>
+            <option>Wound care</option>
+            <option>Wellness / IV drip</option>
+            <option>Circumcision</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label>Message (optional)<textarea name="message" placeholder="Anything we should know?"></textarea></label>
+        <p class="notice"><strong>Medical emergency?</strong> Do not use this form. Call 10177 or 112 from a cellphone, or go to your nearest emergency unit.</p>
+        <button class="btn btn-primary" type="submit"><svg stroke="currentColor"><use href="#i-mail"/></svg> Send request</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© <span id="yr"></span> Dr. LG Mokubedi Inc. All rights reserved.</div>
+    <div class="links">
+      <a href="#services">Services</a>
+      <a href="#locations">Locations</a>
+      <a href="tel:+27122520114">012 252 0114</a>
+      <a href="mailto:drlgmokubediinc@gmail.com">Email us</a>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" href="tel:+27122520114" aria-label="Call the practice"><svg><use href="#i-phone"/></svg></a>
+
+<script>
+  // Opening hours per branch; index 0 = Sunday. null = closed.
+  const HOURS = {
+    letlhabile: [["07:00","14:00"],["07:00","19:00"],["07:00","19:00"],["07:00","19:00"],["07:00","19:00"],["07:00","19:00"],["07:00","14:00"]],
+    brits:      [null,             ["09:00","17:00"],["09:00","17:00"],["09:00","17:00"],["09:00","17:00"],["09:00","17:00"],["09:00","14:00"]]
+  };
+  const DAYS = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+  const ORDER = [1,2,3,4,5,6,0];
+
+  // Current time in South Africa regardless of visitor's timezone
+  function nowSA() {
+    const p = new Intl.DateTimeFormat("en-GB", { timeZone: "Africa/Johannesburg", weekday: "short", hour: "2-digit", minute: "2-digit", hour12: false })
+      .formatToParts(new Date()).reduce((o, x) => (o[x.type] = x.value, o), {});
+    const day = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(p.weekday);
+    return { day, mins: (+p.hour % 24) * 60 + (+p.minute) };
+  }
+  const toMins = t => { const [h, m] = t.split(":"); return h * 60 + +m; };
+
+  function status(branch) {
+    const { day, mins } = nowSA();
+    const today = HOURS[branch][day];
+    if (today && mins >= toMins(today[0]) && mins < toMins(today[1])) {
+      return { open: true, text: `Open now · closes ${today[1]}` };
+    }
+    if (today && mins < toMins(today[0])) return { open: false, text: `Closed · opens today ${today[0]}` };
+    for (let i = 1; i <= 7; i++) {
+      const d = (day + i) % 7, h = HOURS[branch][d];
+      if (h) return { open: false, text: `Closed · opens ${i === 1 ? "tomorrow" : DAYS[d]} ${h[0]}` };
+    }
+    return { open: false, text: "Closed" };
+  }
+
+  function render() {
+    const { day } = nowSA();
+    document.querySelectorAll("[data-hours]").forEach(ul => {
+      const b = ul.dataset.hours;
+      ul.innerHTML = ORDER.map(d => {
+        const h = HOURS[b][d];
+        return `<li class="${d === day ? "today" : ""}"><span>${DAYS[d]}${d === day ? " (today)" : ""}</span><span>${h ? h[0] + " – " + h[1] : "Closed"}</span></li>`;
+      }).join("");
+    });
+    ["letlhabile", "brits"].forEach(b => {
+      const s = status(b);
+      document.querySelectorAll(`[data-status="${b}"]`).forEach(el => el.textContent = s.text);
+      document.querySelectorAll(`[data-dot="${b}"]`).forEach(el => el.className = "dot " + (s.open ? "open" : "closed"));
+    });
+    const s = status("letlhabile");
+    document.getElementById("heroStatus").textContent = "Letlhabile: " + s.text;
+    document.getElementById("heroDot").className = "dot " + (s.open ? "open" : "closed");
+  }
+  render();
+  setInterval(render, 60000);
+
+  // Mobile menu
+  const menu = document.getElementById("menu"), btn = document.getElementById("menuBtn");
+  btn.addEventListener("click", () => {
+    const open = menu.classList.toggle("open");
+    btn.setAttribute("aria-expanded", open);
+  });
+  menu.querySelectorAll("a").forEach(a => a.addEventListener("click", () => { menu.classList.remove("open"); btn.setAttribute("aria-expanded", false); }));
+
+  // Appointment form -> pre-filled email
+  document.getElementById("apptForm").addEventListener("submit", e => {
+    e.preventDefault();
+    const f = e.target;
+    if (!f.fullname.value.trim() || !f.phone.value.trim()) {
+      (f.fullname.value.trim() ? f.phone : f.fullname).focus();
+      alert("Please enter your name and phone number.");
+      return;
+    }
+    const body = [
+      `Name: ${f.fullname.value}`,
+      `Phone: ${f.phone.value}`,
+      `Practice: ${f.branch.value}`,
+      `Preferred date: ${f.date.value || "Any"}`,
+      `Service: ${f.service.value}`,
+      "",
+      f.message.value
+    ].join("\n");
+    location.href = `mailto:drlgmokubediinc@gmail.com?subject=${encodeURIComponent("Appointment request – " + f.fullname.value)}&body=${encodeURIComponent(body)}`;
+  });
+
+  // Min date = today
+  document.querySelector('input[type="date"]').min = new Date().toISOString().split("T")[0];
+  document.getElementById("yr").textContent = new Date().getFullYear();
+
+  // Scroll reveal
+  const io = new IntersectionObserver(entries => entries.forEach(en => {
+    if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
+  }), { threshold: .12 });
+  document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+</script>
+</body>
+</html>
