@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dr. LG Mokubedi Inc. | General Practitioner – Letlhabile &amp; Brits</title>
-<meta name="description" content="Dr. LG Mokubedi Inc. – GP consultations, chronic care, mother &amp; baby clinic, women's health, sonar, ECG, wound care and more. Open 7 days in Letlhabile Mall, plus a branch at Brits Kerkmart.">
+<title>Dr. LG Mokubedi Inc. | General Practitioner in Letlhabile</title>
+<meta name="description" content="Dr. LG Mokubedi Inc. – GP consultations, chronic care, mother &amp; baby clinic, women's health, sonar, ECG, wound care and more. Open 7 days at Letlhabile Mall, North West.">
 <meta name="theme-color" content="#0b5d63">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b5d63'/%3E%3Cpath d='M26 14h12v12h12v12H38v12H26V38H14V26h12z' fill='%23fff'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +19,7 @@
   "founder": { "@type": "Physician", "name": "Dr. Lehlogonolo George Mokubedi" },
   "email": "drlgmokubediinc@gmail.com",
   "telephone": "+27122520114",
+  "sameAs": ["https://www.doctorsnearme.co.za/drWebsite/LEHLOGONOLO%20GEORGE%20MOKUBEDI@710"],
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Shop 53, Letlhabile Medical Centre, Letlhabile Mall, Cnr Osaletseng Str & Letlhabile Road",
@@ -152,7 +153,12 @@
   .card p { color: var(--muted); font-size: .95rem; }
 
   /* Locations */
-  .locs { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  .locs { display: grid; grid-template-columns: 1fr; gap: 28px; }
+  .loc.wide { display: grid; grid-template-columns: 1.1fr 1fr; }
+  .loc.wide iframe { height: 100%; min-height: 420px; }
+  .btn-wa { background: #25d366; color: #fff; box-shadow: 0 8px 20px rgba(37,211,102,.3); }
+  .btn-wa:hover { background: #1ebe5a; transform: translateY(-2px); }
+  .phone.wa .ico svg { stroke: #4ade80; }
   .loc { border: 1px solid var(--line); border-radius: 22px; overflow: hidden; background: var(--white); display: flex; flex-direction: column; }
   .loc iframe { width: 100%; height: 240px; border: 0; background: var(--teal-50); }
   .loc-body { padding: 28px; display: flex; flex-direction: column; gap: 18px; flex: 1; }
@@ -198,7 +204,7 @@
   footer .links { display: flex; gap: 22px; flex-wrap: wrap; }
 
   /* Floating call button (mobile) */
-  .fab { display: none; position: fixed; right: 18px; bottom: 18px; z-index: 60; width: 58px; height: 58px; border-radius: 50%; background: var(--coral); box-shadow: 0 10px 24px rgba(226,114,91,.45); place-items: center; }
+  .fab { display: none; position: fixed; right: 18px; bottom: 18px; z-index: 60; width: 58px; height: 58px; border-radius: 50%; background: #25d366; box-shadow: 0 10px 24px rgba(37,211,102,.45); place-items: center; }
   .fab svg { width: 26px; height: 26px; stroke: var(--white); }
 
   /* Reveal */
@@ -213,7 +219,8 @@
     .strip .wrap > div { grid-template-columns: 1fr 1fr; }
     .strip .item:nth-child(3) { border-left: 0; }
     .strip .item:nth-child(n+3) { border-top: 1px solid var(--line); }
-    .locs { grid-template-columns: 1fr; }
+    .loc.wide { grid-template-columns: 1fr; }
+    .loc.wide iframe { min-height: 260px; }
     .portrait { max-width: 420px; aspect-ratio: 4/3; }
   }
   @media (max-width: 760px) {
@@ -254,15 +261,17 @@
     <symbol id="i-drop" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7 6.3 8.4a8 8 0 1 0 11.4 0z"/></symbol>
     <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
     <symbol id="i-cross" viewBox="0 0 24 24" fill="#fff"><path d="M9 2h6v7h7v6h-7v7H9v-7H2V9h7z"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.6-4.7A8.5 8.5 0 1 1 7.7 19.4z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1.2-1.2-1.8-.9-.8.8a4 4 0 0 1-2.3-2.3l.8-.8-.9-1.8z"/></symbol>
     <symbol id="i-nav" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 19-9-9 19-2-8z"/></symbol>
   </defs>
 </svg>
 
 <div class="topbar">
   <div class="wrap">
-    <span><svg width="14" height="14" stroke="currentColor"><use href="#i-clock"/></svg> Letlhabile open 7 days a week</span>
+    <span><svg width="14" height="14" stroke="currentColor"><use href="#i-clock"/></svg> Open 7 days a week</span>
     <span class="hide-sm">
       <a href="tel:+27122520114">012 252 0114</a> &nbsp;·&nbsp;
+      <a href="https://wa.me/27636017159" target="_blank" rel="noopener">WhatsApp 063 601 7159</a> &nbsp;·&nbsp;
       <a href="mailto:drlgmokubediinc@gmail.com">drlgmokubediinc@gmail.com</a>
     </span>
   </div>
@@ -284,7 +293,7 @@
       <ul id="menu">
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#locations">Locations &amp; Hours</a></li>
+        <li><a href="#locations">Location &amp; Hours</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="tel:+27122520114" class="btn btn-primary"><svg stroke="currentColor"><use href="#i-phone"/></svg> Call now</a></li>
       </ul>
@@ -303,6 +312,7 @@
         <p>Dr. Lehlogonolo George Mokubedi and the team offer trusted general practice care for the whole family — from everyday consultations and chronic medication to antenatal care, sonar and wellness services.</p>
         <div class="hero-ctas">
           <a href="tel:+27122520114" class="btn btn-primary"><svg stroke="currentColor"><use href="#i-phone"/></svg> Call 012 252 0114</a>
+          <a href="https://wa.me/27636017159" target="_blank" rel="noopener" class="btn btn-wa"><svg stroke="currentColor"><use href="#i-wa"/></svg> WhatsApp us</a>
           <a href="#locations" class="btn btn-ghost"><svg stroke="currentColor"><use href="#i-pin"/></svg> Find us</a>
         </div>
       </div>
@@ -320,7 +330,7 @@
   <div class="strip">
     <div class="wrap"><div>
       <div class="item"><span class="ico"><svg><use href="#i-clock"/></svg></span><div><strong>Open 7 days</strong><small>Weekdays until 19:00</small></div></div>
-      <div class="item"><span class="ico"><svg><use href="#i-pin"/></svg></span><div><strong>Two locations</strong><small>Letlhabile &amp; Brits</small></div></div>
+      <div class="item"><span class="ico"><svg><use href="#i-pin"/></svg></span><div><strong>Letlhabile Mall</strong><small>Next to Standard Bank</small></div></div>
       <div class="item"><span class="ico"><svg><use href="#i-baby"/></svg></span><div><strong>Whole-family care</strong><small>Babies to pensioners</small></div></div>
       <div class="item"><span class="ico"><svg><use href="#i-scan"/></svg></span><div><strong>On-site diagnostics</strong><small>Sonar, ECG, spirometry</small></div></div>
     </div></div>
@@ -335,9 +345,9 @@
       </div>
       <div class="reveal">
         <span class="eyebrow">About the practice</span>
-        <h2>Your local family doctor in Letlhabile and Brits</h2>
+        <h2>Your local family doctor in Letlhabile</h2>
         <p>Dr. LG Mokubedi Inc. was founded by Dr. Lehlogonolo George Mokubedi (MBChB), a general medical practitioner committed to accessible, quality healthcare close to home.</p>
-        <p>Our main practice in the Letlhabile Medical Centre is open seven days a week with extended weekday hours, so you can see a doctor before or after work. Our Brits branch at Brits Kerkmart serves patients from Monday to Saturday.</p>
+        <p>Our main practice in the Letlhabile Medical Centre is open seven days a week with extended weekday hours, so you can see a doctor before or after work.</p>
         <ul class="checks">
           <li><svg><use href="#i-check"/></svg> Consultations for all ages</li>
           <li><svg><use href="#i-check"/></svg> Chronic care &amp; medication</li>
@@ -374,41 +384,25 @@
   <section id="locations">
     <div class="wrap">
       <div class="section-head reveal">
-        <span class="eyebrow">Locations &amp; hours</span>
-        <h2>Two practices, close to home</h2>
-        <p class="lead">Visit us at our main practice in Letlhabile Mall or our branch in Brits.</p>
+        <span class="eyebrow">Location &amp; hours</span>
+        <h2>Find us at Letlhabile Mall</h2>
+        <p class="lead">We're inside the Letlhabile Medical Centre, next to Standard Bank. Walk in or book ahead.</p>
       </div>
       <div class="locs">
-        <article class="loc reveal">
+        <article class="loc wide reveal">
           <iframe loading="lazy" title="Map of Letlhabile Mall" referrerpolicy="no-referrer-when-downgrade"
             src="https://maps.google.com/maps?q=-25.4895457,27.8399346&z=17&output=embed"></iframe>
           <div class="loc-body">
             <div class="loc-top">
-              <div><span class="badge">Main practice</span><h3>Letlhabile</h3></div>
+              <div><span class="badge">Our practice</span><h3>Letlhabile Medical Centre</h3></div>
               <span class="live"><span class="dot" data-dot="letlhabile"></span><span data-status="letlhabile"></span></span>
             </div>
             <p class="addr"><svg><use href="#i-pin"/></svg> Shop 53, Letlhabile Medical Centre, Letlhabile Mall (next to Standard Bank), Cnr Osaletseng Str &amp; Letlhabile Road, Letlhabile, North West, 0264</p>
             <ul class="hours-list" data-hours="letlhabile"></ul>
             <div class="actions">
               <a href="tel:+27122520114" class="btn btn-primary"><svg stroke="currentColor"><use href="#i-phone"/></svg> Call</a>
+              <a href="https://wa.me/27636017159" target="_blank" rel="noopener" class="btn btn-wa"><svg stroke="currentColor"><use href="#i-wa"/></svg> WhatsApp</a>
               <a href="https://www.google.com/maps/search/?api=1&query=-25.4895457%2C27.8399346" target="_blank" rel="noopener" class="btn btn-outline"><svg stroke="currentColor"><use href="#i-nav"/></svg> Directions</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="loc reveal">
-          <iframe loading="lazy" title="Map of Brits Kerkmart" referrerpolicy="no-referrer-when-downgrade"
-            src="https://maps.google.com/maps?q=Kerkmart%2C%20Brits&z=16&output=embed"></iframe>
-          <div class="loc-body">
-            <div class="loc-top">
-              <div><span class="badge alt">Branch</span><h3>Brits</h3></div>
-              <span class="live"><span class="dot" data-dot="brits"></span><span data-status="brits"></span></span>
-            </div>
-            <p class="addr"><svg><use href="#i-pin"/></svg> Brits Kerkmart, Brits, North West</p>
-            <ul class="hours-list" data-hours="brits"></ul>
-            <div class="actions">
-              <a href="tel:+27122520114" class="btn btn-primary"><svg stroke="currentColor"><use href="#i-phone"/></svg> Call</a>
-              <a href="https://www.google.com/maps/search/?api=1&query=Kerkmart%20Brits" target="_blank" rel="noopener" class="btn btn-outline"><svg stroke="currentColor"><use href="#i-nav"/></svg> Directions</a>
             </div>
           </div>
         </article>
@@ -422,9 +416,10 @@
       <div class="reveal">
         <span class="eyebrow" style="color:#ffc3b4">Get in touch</span>
         <h2>Book a visit or ask a question</h2>
-        <p class="lead">Call any of our numbers during practice hours, or send us a message and we'll get back to you.</p>
+        <p class="lead">Call us during practice hours, WhatsApp us, or send an appointment request and we'll get back to you.</p>
         <div class="phones">
           <a class="phone" href="tel:+27122520114"><span class="ico"><svg><use href="#i-phone"/></svg></span><span><small>Practice line</small><strong>012 252 0114</strong></span></a>
+          <a class="phone wa" href="https://wa.me/27636017159" target="_blank" rel="noopener"><span class="ico"><svg><use href="#i-wa"/></svg></span><span><small>WhatsApp</small><strong>063 601 7159</strong></span></a>
           <a class="phone" href="tel:+27683918938"><span class="ico"><svg><use href="#i-phone"/></svg></span><span><small>Mobile</small><strong>068 391 8938</strong></span></a>
           <a class="phone" href="tel:+27115120242"><span class="ico"><svg><use href="#i-phone"/></svg></span><span><small>Alternative line</small><strong>011 512 0242</strong></span></a>
           <a class="phone" href="mailto:drlgmokubediinc@gmail.com"><span class="ico"><svg><use href="#i-mail"/></svg></span><span><small>Email</small><strong>drlgmokubediinc@gmail.com</strong></span></a>
@@ -433,21 +428,14 @@
 
       <form id="apptForm" class="reveal" novalidate>
         <h3>Appointment request</h3>
-        <p class="small">This opens your email app with the details filled in. Prefer to pick a time slot yourself? <a href="https://www.doctorsnearme.co.za/drWebsite/LEHLOGONOLO%20GEORGE%20MOKUBEDI@710" target="_blank" rel="noopener" style="color:var(--teal-700);font-weight:600;text-decoration:underline">Book online</a>.</p>
+        <p class="small">Send it on WhatsApp or by email, with your details filled in. Prefer to pick a time slot yourself? <a href="https://www.doctorsnearme.co.za/drWebsite/LEHLOGONOLO%20GEORGE%20MOKUBEDI@710" target="_blank" rel="noopener" style="color:var(--teal-700);font-weight:600;text-decoration:underline">Book online</a>.</p>
         <div class="row">
           <label>Full name<input name="fullname" required autocomplete="name"></label>
           <label>Phone number<input name="phone" type="tel" required autocomplete="tel"></label>
         </div>
         <div class="row">
-          <label>Practice
-            <select name="branch">
-              <option>Letlhabile (main practice)</option>
-              <option>Brits (Kerkmart)</option>
-            </select>
-          </label>
           <label>Preferred date<input name="date" type="date"></label>
-        </div>
-        <label>Service
+          <label>Service
           <select name="service">
             <option>General consultation</option>
             <option>Chronic medication / follow-up</option>
@@ -461,9 +449,13 @@
             <option>Other</option>
           </select>
         </label>
+        </div>
         <label>Message (optional)<textarea name="message" placeholder="Anything we should know?"></textarea></label>
         <p class="notice"><strong>Medical emergency?</strong> Do not use this form. Call 10177 or 112 from a cellphone, or go to your nearest emergency unit.</p>
-        <button class="btn btn-primary" type="submit"><svg stroke="currentColor"><use href="#i-mail"/></svg> Send request</button>
+        <div class="row">
+          <button class="btn btn-wa" type="submit" value="wa"><svg stroke="currentColor"><use href="#i-wa"/></svg> Send on WhatsApp</button>
+          <button class="btn btn-primary" type="submit" value="email"><svg stroke="currentColor"><use href="#i-mail"/></svg> Send by email</button>
+        </div>
       </form>
     </div>
   </section>
@@ -474,20 +466,19 @@
     <div>© <span id="yr"></span> Dr. LG Mokubedi Inc. · Practice No. 1268953. All rights reserved.</div>
     <div class="links">
       <a href="#services">Services</a>
-      <a href="#locations">Locations</a>
+      <a href="#locations">Location</a>
       <a href="tel:+27122520114">012 252 0114</a>
       <a href="mailto:drlgmokubediinc@gmail.com">Email us</a>
     </div>
   </div>
 </footer>
 
-<a class="fab" href="tel:+27122520114" aria-label="Call the practice"><svg><use href="#i-phone"/></svg></a>
+<a class="fab" href="https://wa.me/27636017159" target="_blank" rel="noopener" aria-label="WhatsApp the practice"><svg><use href="#i-wa"/></svg></a>
 
 <script>
   // Opening hours per branch; index 0 = Sunday. null = closed.
   const HOURS = {
-    letlhabile: [["07:00","14:00"],["07:00","19:00"],["07:00","19:00"],["07:00","19:00"],["07:00","19:00"],["07:00","19:00"],["07:00","14:00"]],
-    brits:      [null,             ["09:00","17:00"],["09:00","17:00"],["09:00","17:00"],["09:00","17:00"],["09:00","17:00"],["09:00","14:00"]]
+    letlhabile: [["07:00","14:00"],["07:00","19:00"],["07:00","19:00"],["07:00","19:00"],["07:00","19:00"],["07:00","19:00"],["07:00","14:00"]]
   };
   const DAYS = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
   const ORDER = [1,2,3,4,5,6,0];
@@ -524,13 +515,13 @@
         return `<li class="${d === day ? "today" : ""}"><span>${DAYS[d]}${d === day ? " (today)" : ""}</span><span>${h ? h[0] + " – " + h[1] : "Closed"}</span></li>`;
       }).join("");
     });
-    ["letlhabile", "brits"].forEach(b => {
+    ["letlhabile"].forEach(b => {
       const s = status(b);
       document.querySelectorAll(`[data-status="${b}"]`).forEach(el => el.textContent = s.text);
       document.querySelectorAll(`[data-dot="${b}"]`).forEach(el => el.className = "dot " + (s.open ? "open" : "closed"));
     });
     const s = status("letlhabile");
-    document.getElementById("heroStatus").textContent = "Letlhabile: " + s.text;
+    document.getElementById("heroStatus").textContent = s.text;
     document.getElementById("heroDot").className = "dot " + (s.open ? "open" : "closed");
   }
   render();
@@ -556,12 +547,15 @@
     const body = [
       `Name: ${f.fullname.value}`,
       `Phone: ${f.phone.value}`,
-      `Practice: ${f.branch.value}`,
       `Preferred date: ${f.date.value || "Any"}`,
       `Service: ${f.service.value}`,
       "",
       f.message.value
     ].join("\n");
+    if (e.submitter && e.submitter.value === "wa") {
+      window.open("https://wa.me/27636017159?text=" + encodeURIComponent("Appointment request\n" + body), "_blank", "noopener");
+      return;
+    }
     location.href = `mailto:drlgmokubediinc@gmail.com?subject=${encodeURIComponent("Appointment request – " + f.fullname.value)}&body=${encodeURIComponent(body)}`;
   });
 
