@@ -21,7 +21,8 @@
   "telephone": "+27122520114",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Shop No. 53, Letlhabile Medical Centre, Letlhabile Mall",
+    "streetAddress": "Shop 53, Letlhabile Medical Centre, Letlhabile Mall, Cnr Osaletseng Str & Letlhabile Road",
+    "postalCode": "0264",
     "addressLocality": "Letlhabile",
     "addressRegion": "North West",
     "addressCountry": "ZA"
@@ -30,7 +31,8 @@
     { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:00", "closes": "19:00" },
     { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "07:00", "closes": "14:00" }
   ],
-  "medicalSpecialty": "PrimaryCare"
+  "medicalSpecialty": "PrimaryCare",
+  "geo": { "@type": "GeoCoordinates", "latitude": -25.4895457, "longitude": 27.8399346 }
 }
 </script>
 
@@ -272,7 +274,7 @@
       <span class="brand-mark"><svg><use href="#i-cross"/></svg></span>
       <span>
         <span class="brand-name">Dr. LG Mokubedi Inc.</span><br>
-        <span class="brand-sub">General Medical Practitioner</span>
+        <span class="brand-sub">General Medical Practitioner · Pr. No. 1268953</span>
       </span>
     </a>
     <nav>
@@ -309,7 +311,7 @@
         <h3>Letlhabile Practice</h3>
         <p class="small">Shop 53, Letlhabile Medical Centre, Letlhabile Mall</p>
         <ul class="hours-list" data-hours="letlhabile"></ul>
-        <a href="#contact" class="btn btn-outline"><svg stroke="currentColor"><use href="#i-cal"/></svg> Request an appointment</a>
+        <a href="https://www.doctorsnearme.co.za/drWebsite/LEHLOGONOLO%20GEORGE%20MOKUBEDI@710" target="_blank" rel="noopener" class="btn btn-outline"><svg stroke="currentColor"><use href="#i-cal"/></svg> Book online</a>
       </aside>
     </div>
   </section>
@@ -329,12 +331,12 @@
     <div class="wrap">
       <div class="portrait reveal" aria-hidden="true">
         <span class="initials">LG</span>
-        <div class="tag"><strong>Dr. Lehlogonolo George Mokubedi</strong><span>General Practitioner · Founder</span></div>
+        <div class="tag"><strong>Dr. Lehlogonolo George Mokubedi</strong><span>MBChB · General Practitioner · Founder</span></div>
       </div>
       <div class="reveal">
         <span class="eyebrow">About the practice</span>
         <h2>Your local family doctor in Letlhabile and Brits</h2>
-        <p>Dr. LG Mokubedi Inc. was founded by Dr. Lehlogonolo George Mokubedi, a general medical practitioner committed to accessible, quality healthcare close to home.</p>
+        <p>Dr. LG Mokubedi Inc. was founded by Dr. Lehlogonolo George Mokubedi (MBChB), a general medical practitioner committed to accessible, quality healthcare close to home.</p>
         <p>Our main practice in the Letlhabile Medical Centre is open seven days a week with extended weekday hours, so you can see a doctor before or after work. Our Brits branch at Brits Kerkmart serves patients from Monday to Saturday.</p>
         <ul class="checks">
           <li><svg><use href="#i-check"/></svg> Consultations for all ages</li>
@@ -379,17 +381,17 @@
       <div class="locs">
         <article class="loc reveal">
           <iframe loading="lazy" title="Map of Letlhabile Mall" referrerpolicy="no-referrer-when-downgrade"
-            src="https://maps.google.com/maps?q=Letlhabile%20Mall%2C%20Letlhabile%2C%20North%20West&z=16&output=embed"></iframe>
+            src="https://maps.google.com/maps?q=-25.4895457,27.8399346&z=17&output=embed"></iframe>
           <div class="loc-body">
             <div class="loc-top">
               <div><span class="badge">Main practice</span><h3>Letlhabile</h3></div>
               <span class="live"><span class="dot" data-dot="letlhabile"></span><span data-status="letlhabile"></span></span>
             </div>
-            <p class="addr"><svg><use href="#i-pin"/></svg> Shop No. 53, Letlhabile Medical Centre, Letlhabile Mall (next to Standard Bank), Letlhabile, North West</p>
+            <p class="addr"><svg><use href="#i-pin"/></svg> Shop 53, Letlhabile Medical Centre, Letlhabile Mall (next to Standard Bank), Cnr Osaletseng Str &amp; Letlhabile Road, Letlhabile, North West, 0264</p>
             <ul class="hours-list" data-hours="letlhabile"></ul>
             <div class="actions">
               <a href="tel:+27122520114" class="btn btn-primary"><svg stroke="currentColor"><use href="#i-phone"/></svg> Call</a>
-              <a href="https://www.google.com/maps/search/?api=1&query=Letlhabile%20Mall%20Letlhabile%20North%20West" target="_blank" rel="noopener" class="btn btn-outline"><svg stroke="currentColor"><use href="#i-nav"/></svg> Directions</a>
+              <a href="https://www.google.com/maps/search/?api=1&query=-25.4895457%2C27.8399346" target="_blank" rel="noopener" class="btn btn-outline"><svg stroke="currentColor"><use href="#i-nav"/></svg> Directions</a>
             </div>
           </div>
         </article>
@@ -431,7 +433,7 @@
 
       <form id="apptForm" class="reveal" novalidate>
         <h3>Appointment request</h3>
-        <p class="small">This opens your email app with the details filled in.</p>
+        <p class="small">This opens your email app with the details filled in. Prefer to pick a time slot yourself? <a href="https://www.doctorsnearme.co.za/drWebsite/LEHLOGONOLO%20GEORGE%20MOKUBEDI@710" target="_blank" rel="noopener" style="color:var(--teal-700);font-weight:600;text-decoration:underline">Book online</a>.</p>
         <div class="row">
           <label>Full name<input name="fullname" required autocomplete="name"></label>
           <label>Phone number<input name="phone" type="tel" required autocomplete="tel"></label>
@@ -469,7 +471,7 @@
 
 <footer>
   <div class="wrap">
-    <div>© <span id="yr"></span> Dr. LG Mokubedi Inc. All rights reserved.</div>
+    <div>© <span id="yr"></span> Dr. LG Mokubedi Inc. · Practice No. 1268953. All rights reserved.</div>
     <div class="links">
       <a href="#services">Services</a>
       <a href="#locations">Locations</a>
